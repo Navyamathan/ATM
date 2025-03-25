@@ -13,13 +13,12 @@ class CustomerActions
     {
         System.out.println();
         System.out.println("YOU ENTER THE ADMIN BOARD...");
+        System.out.println();
         while (true)  // this while loop runs until the user give choice as exit
         {
-            System.out.println();
             System.out.println("1. CHECK BALANCE\n2. DEPOSIT CASH\n3. WITHDRAW CASH\n4. CHANGE PIN\n5. VIEW TRANSACTIONS\n6. Exit");
             System.out.print("Enter Your Choice: ");
-            int choice = s.nextInt(); // get the choice from the user
-            s.nextLine();
+            int choice = Integer.parseInt(s.nextLine()); // get the choice from the user
             System.out.println();
 
             // using if,else if and else condition Statements to execute based on the user choices
@@ -139,8 +138,7 @@ class CustomerActions
     public void depositCash(Scanner s, Account customer)
     {
         System.out.print("Enter the Amount To Deposit: ");
-        double amount = s.nextDouble(); // get the amount to deposit from the customer
-        s.nextLine();
+        double amount = Double.parseDouble(s.nextLine()); // get the amount to deposit from the customer
         System.out.println();
 
         if(amount <= 0) // check the given amount not lesser than or equal to zero
@@ -150,20 +148,16 @@ class CustomerActions
 
         // and also get the denomination for each note they were going to deposit
         System.out.print("Enter the number of 2000 notes:");
-        int twoThousand = s.nextInt();
-        s.nextLine();
+        int twoThousand = Integer.parseInt(s.nextLine());
 
         System.out.print("Enter the number of 500 notes:");
-        int fiveHundred = s.nextInt();
-        s.nextLine();
+        int fiveHundred = Integer.parseInt(s.nextLine());
 
         System.out.print("Enter the number of 200 notes:");
-        int twoHundred = s.nextInt();
-        s.nextLine();
+        int twoHundred = Integer.parseInt(s.nextLine());
 
         System.out.print("Enter the number of 100 notes:");
-        int oneHundred = s.nextInt();
-        s.nextLine();
+        int oneHundred = Integer.parseInt(s.nextLine());
 
         int calculate = (twoThousand * 2000) + (fiveHundred * 500) + (twoHundred * 200) + (oneHundred * 100);//calculate the total amount by the denomination they give
 
@@ -231,9 +225,8 @@ class CustomerActions
 
         System.out.println("Remainder: Enter the Amount Should Be Divide by these Denominations ₹2000, ₹500, ₹200, ₹100");
         System.out.print("Enter the Amount To Withdraw: ");
-        double withdrawAmount = s.nextLong(); // get the amount to withdraw from the customer
+        double withdrawAmount = Double.parseDouble(s.nextLine()); // get the amount to withdraw from the customer
         double amount = withdrawAmount; // withdrawalAmount will change in the further operation so here assign that variable to the another variable
-        s.nextLine();
         System.out.println();
 
         if(amount > ((Customer)customer).getAccountBalance()) // checks if the withdrawal amount is lesser than the customer account balance
@@ -372,5 +365,5 @@ class CustomerActions
         System.out.println();
     }
 
-
 }
+

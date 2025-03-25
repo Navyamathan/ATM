@@ -28,14 +28,13 @@ class AtmActions
             System.out.println();
             System.out.println("1. ADMIN \n2. CUSTOMER \n3. EXIT"); // print the choice
             System.out.print("Enter Your Choice: ");
-            int n = s.nextInt(); // get choice from the user
-            s.nextLine(); // it gets the escape character /n that the nextInt miss(because nextInt get only integer values but /n is a character that's why)
+            int n = Integer.parseInt(s.nextLine());
             System.out.println();
 
             // using if,else if,else condition statement to check the choice that give based on the choice user give program will execute
             if (n == 1)
             {
-                Atm.getAccountArrayList().add(new Admin("Navya","1995")); // add the Admin data to the Admin arraylist
+                Atm.getAccountArrayList().add(new Admin("ADMIN","12345")); // add the Admin data to the Admin arraylist
 
                 Account currentAdmin = AdminActions.adminLogin(s); // call the adminLogin function By the Class name because this function declared as a static and store the value to the variable that the function returns
 

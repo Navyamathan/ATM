@@ -18,8 +18,7 @@ class AdminActions
             System.out.println();
             System.out.println("1. CHECK ATM BALANCE \n2. DEPOSIT CASH \n3. ADD ACCOUNT \n4. DELETE ACCOUNT \n5. VIEW ALL ACCOUNT \n6. VIEW ALL TRANSACTIONS \n7. EXIT");
             System.out.print("Enter Your Choice: ");
-            int choice = s.nextInt(); // get the choice from the user
-            s.nextLine();
+            int choice = Integer.parseInt(s.nextLine());
             System.out.println();
 
             // using if,else if and else condition Statements to execute based on the user choices
@@ -146,8 +145,7 @@ class AdminActions
         System.out.print("Enter Customer PIN Code: ");
         pin = s.nextLine();
         System.out.print("Enter Customer Balance: ");
-        balance = s.nextDouble();
-        s.nextLine();
+        balance = Double.parseDouble(s.nextLine());
         System.out.print("Enter Customer Name: ");
         name = s.nextLine();
         Atm.getAccountArrayList().add(new Customer(accNo, pin, balance, name)); // add the data that get from the admin into the customer arraylist
@@ -194,26 +192,21 @@ class AdminActions
     public void adminDeposit(Scanner s, Account admin)
     {
         System.out.print("Enter the Amount To Deposit: ");
-        double amount = s.nextInt();
-        s.nextLine(); // get the amount to deposit from the admin
+        double amount = Double.parseDouble(s.nextLine()); // get the amount to deposit from the admin
         System.out.println();
 
         // and also get the denomination for each note they were going to deposit
         System.out.print("Enter the number of 2000 notes:");
-        int twoThousand = s.nextInt();
-        s.nextLine();
+        int twoThousand = Integer.parseInt(s.nextLine());
 
         System.out.print("Enter the number of 500 notes:");
-        int fiveHundred = s.nextInt();
-        s.nextLine();
+        int fiveHundred = Integer.parseInt(s.nextLine());
 
         System.out.print("Enter the number of 200 notes:");
-        int twoHundred = s.nextInt();
-        s.nextLine();
+        int twoHundred = Integer.parseInt(s.nextLine());
 
         System.out.print("Enter the number of 100 notes:");
-        int oneHundred = s.nextInt();
-        s.nextLine();
+        int oneHundred = Integer.parseInt(s.nextLine());
 
         int calculate = (twoThousand * 2000) + (fiveHundred * 500) + (twoHundred * 200) + (oneHundred * 100);//calculate the total amount by the denomination they give
 
@@ -255,7 +248,6 @@ class AdminActions
             System.out.println("After Deposit ₹ " +String.format("%,.2f",amount) + ", ATM Balance Is: ₹ " + String.format("%,.2f", Atm.getBalance()));
             System.out.println("Deposit Successfully!");
             Admin.getTransactionArrayList().add(new Transaction(admin.getId(), "Deposit", amount)); // add the deposited information to the transaction arraylist
-            System.out.println();
 
         }
         else // if condition is false then else block will be executed
