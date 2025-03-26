@@ -2,6 +2,8 @@
 
 A robust and efficient ATM management system that facilitates seamless financial transactions, including deposits, withdrawals, balance inquiries, and administrative functions. The system ensures secure operations with role-based access for administrators and customers.
 
+---
+
 ## 📌 Features
 
 ### 🏦 Admin Operations
@@ -24,6 +26,8 @@ Users can efficiently manage their transactions:
 - **Deposit Money** - Add funds to their account.
 - **Transaction History** - View past transaction details.
 
+  ---
+
 ## 📂 Project Structure
 
 ### 🏛 Core Components
@@ -39,6 +43,8 @@ Users can efficiently manage their transactions:
 - **Account** - Stores account details (ID, password, balance, transactions).
 - **Transaction** - Tracks transaction type, amount, and time.
 - **Denomination** - Manages available currency notes in the ATM.
+
+  ---
 
 ## 🛠 Installation & Setup
 
@@ -61,9 +67,13 @@ javac MainClass.java
 java MainClass
 ```
 
+---
+
 ## 🖥 System Flow Diagram
 
 ![ATM Architecture](https://github.com/Navyamathan/ATM/blob/main/ATM/ATM.png)
+
+---
 
 ## 📊 Output Preview
 
@@ -72,6 +82,8 @@ java MainClass
 https://github.com/user-attachments/assets/ea7b333f-95d8-482b-875d-cb103b0b74c1
 
 
+
+---
 
 ## 🔄 How It Works
 
@@ -89,11 +101,15 @@ https://github.com/user-attachments/assets/ea7b333f-95d8-482b-875d-cb103b0b74c1
 3. Withdraws or deposits money.
 4. Receives confirmation and updates.
 
+---
+
 ## 🚀 Future Enhancements
 
 - Integration with biometric authentication.
 - Multi-language support for better accessibility.
 - AI-based fraud detection for enhanced security.
+
+---
 
 ## 📞 Contact & Author
 
