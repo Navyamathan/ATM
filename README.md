@@ -65,6 +65,10 @@ java MainClass
 
 ![ATM Architecture](https://github.com/Navyamathan/ATM/blob/main/ATM/ATM.png)
 
+## 📊 Output Preview
+
+[Click here to view sample output](https://github.com/user-attachments/assets/56212d8e-51ef-48c2-a7dd-de1126b5df30)
+
 ## 🔄 How It Works
 
 ### 👨‍💼 Admin Workflow:
