@@ -63,7 +63,7 @@ java MainClass
 
 ## 🖥 System Flow Diagram
 
-![BookMyShow Architecture](https://github.com/Navyamathan/BookMyShow/blob/main/BookMyShow/BookMyShow.png)
+![BookMyShow Architecture](https://github.com/Navyamathan/ATM/blob/main/ATM/ATM.png)
 
 ## 🔄 How It Works
 
