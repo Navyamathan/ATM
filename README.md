@@ -26,7 +26,7 @@ Users can efficiently manage their transactions:
 - **Deposit Money** - Add funds to their account.
 - **Transaction History** - View past transaction details.
 
-  ---
+---
 
 ## 📂 Project Structure
 
@@ -44,7 +44,7 @@ Users can efficiently manage their transactions:
 - **Transaction** - Tracks transaction type, amount, and time.
 - **Denomination** - Manages available currency notes in the ATM.
 
-  ---
+---
 
 ## 🛠 Installation & Setup
 
