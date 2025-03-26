@@ -91,7 +91,7 @@ java MainClass
 
 **Author:** Navya M V  
 **📧 Email:** navyamathan@gmail.com  
-**🔗 LinkedIn:** Navya M V  
+🔗 LinkedIn: [Navya M V](https://www.linkedin.com/in/navya-m-v-55515b353/)  
 
 Happy Coding & Secure Banking! 💰
 
