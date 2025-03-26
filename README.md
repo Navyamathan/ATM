@@ -67,7 +67,11 @@ java MainClass
 
 ## 📊 Output Preview
 
-[Click here to view sample output](https://github.com/Navyamathan/ATM/blob/main/ATM/ATM.mp4)
+
+
+https://github.com/user-attachments/assets/ea7b333f-95d8-482b-875d-cb103b0b74c1
+
+
 
 ## 🔄 How It Works
 
